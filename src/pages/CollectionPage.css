@@ -1,0 +1,166 @@
+.collection-page {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+  min-height: calc(100vh - 70px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.collection-page::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.user-panel, .machine-panel {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* User Panel Styling */
+.user-panel {
+  flex-basis: 350px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.user-panel h3 {
+  font-size: 1.4rem;
+  color: #2c5b3f;
+  margin-bottom: 1.5rem;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.voucher-btn, .logout-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.voucher-btn {
+  background-color: #ff9800;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.voucher-btn:hover {
+  background-color: #f57c00;
+}
+
+.voucher-btn.disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+}
+
+/* Machine Panel Styling */
+.machine-panel {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  margin: 0 auto;
+  min-width: 350px;
+  max-width: 500px;
+  opacity: 0.97;
+  position: relative;
+  z-index: 2;
+}
+
+.machine-panel h2 {
+  font-size: 2rem;
+  color: #2c5b3f;
+  margin-bottom: 1.5rem;
+}
+
+.status-display {
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-display p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.session-counter {
+  margin-bottom: 2rem;
+}
+
+.session-counter p {
+  font-size: 1.2rem;
+}
+
+.session-counter span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4caf50;
+  margin-left: 0.5rem;
+}
+
+.controls .control-btn {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.control-btn.start {
+  background: linear-gradient(45deg, #4caf50, #81c784);
+}
+.control-btn.end {
+  background: linear-gradient(45deg, #f44336, #e57373);
+}
+.control-btn.confirm {
+  background: linear-gradient(45deg, #2196f3, #64b5f6);
+}
+
+.control-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+} 
