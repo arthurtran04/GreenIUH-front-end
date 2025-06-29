@@ -44,8 +44,8 @@ const LoginPage = () => {
 
     try {
       const url = isLogin
-        ? 'http://localhost:5000/api/User/user-login'
-        : 'http://localhost:5000/api/User/create-user';
+        ? 'https://greeniuh-backend.onrender.com/api/User/user-login'
+        : 'https://greeniuh-backend.onrender.com/api/User/create-user';
 
       const payload = isLogin
         ? { identifier: phoneOrEmail, password }

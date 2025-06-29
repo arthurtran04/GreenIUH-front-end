@@ -18,7 +18,7 @@ const UserInfoPage = () => {
 
     const fetchProfile = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/User/me/detail', {
+        const response = await fetch('https://greeniuh-backend.onrender.com/api/User/me/detail', {
           headers: {
             'Authorization': `Bearer ${token}`
           }

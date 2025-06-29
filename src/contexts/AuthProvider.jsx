@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
       }
 
       try {
-        const res = await fetch('http://localhost:5000/api/User/me/detail', {
+        const res = await fetch('https://greeniuh-backend.onrender.com/api/User/me/detail', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
